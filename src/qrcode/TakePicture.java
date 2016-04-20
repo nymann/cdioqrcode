@@ -48,6 +48,7 @@ public class TakePicture extends JPanel {
                     String qrcode = readQRCode(image);
                     if (qrcode != "") {
                         System.out.println(qrcode);
+                        t.window(image, "image", 0, 0);
                         break;
                     }
                 }
