@@ -69,13 +69,15 @@ public class GetQRCode extends JPanel {
         try {
             result = reader.decode(bitmap, hintMap);
         } catch (NotFoundException e) {
-            System.out.println("QR not found. Might have been partially detected but could not be confirmed.");
+            return "QR not found. Might have been partially detected but " +
+                    "could not be confirmed.";
         } catch (ChecksumException e) {
-            System.out.println("Successfully detected and decoded, but was not returned because its checksum feature failed.");
+            return "Successfully detected and decoded, but was not returned " +
+                    "because its checksum feature failed.";
         } catch (FormatException e) {
-            System.out.println("Detected, but some aspect did not conform to the format rules.");
+            return "Detected, but some aspect did not conform to the format " +
+                    "rules.";
         }
-
 
         return result != null ? result.getText() : "";
     }
