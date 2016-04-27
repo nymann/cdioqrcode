@@ -34,6 +34,10 @@ public class Helpers {
                         q.window(image, "QRCode Detected.", 0, 0);
                         break;
                     }
+                    else {
+                        // if you want to see which of the 3 error codes you get
+                        System.out.println(qrcode);
+                    }
                 }
             }
         }

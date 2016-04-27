@@ -5,7 +5,6 @@ import com.google.zxing.client.j2se.BufferedImageLuminanceSource;
 import com.google.zxing.common.HybridBinarizer;
 import com.google.zxing.qrcode.QRCodeReader;
 import org.opencv.core.Mat;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.BufferedImage;
